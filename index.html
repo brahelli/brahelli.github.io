@@ -1,8 +1,23 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<img src="game.gif" alt="Game Controller">
-</body>
+	<head><link rel="stylesheet" href="styling.css"></head>
+	<body>
+		<h1>Hello World</h1>
+		<p>I'm hosted with GitHub Pages.</p>
+		<img src="game.gif" alt="Game Controller">
+		<div class="slidecontainer">
+  			<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+			Choose how much you like gaming
+		</div>
+	</body>
+	<script>
+		var slider = document.getElementById("myRange");
+		var output = document.getElementById("demo");
+		output.innerHTML = slider.value; // Display the default slider value
+
+		// Update the current slider value (each time you drag the slider handle)
+		slider.oninput = function() {
+			output.innerHTML = this.value;
+		}
+	</script>
 </html>
