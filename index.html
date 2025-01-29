@@ -3,9 +3,43 @@
   <head>
     <title>Portfolio</title>
   </head>
-  <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <video width="320" height="240" controls>
-      <source src="ClonePrototype.mp4" type="video/mp4">
-    </video>
+  <style>
+    div.padding {
+      margin: 10px;
+    }
+  </style>
+  <body style="text-align: center; padding: 0; border: 5; margin: 5;">
+
+    <div class="padding">
+      <a href="index.html"><button>Clone Prototype</button></a>
+      <a href="index.html"><button>3D Multiplayer</button></a>
+      <a href="index.html"><button>Holo Pet</button></a>
+      <a href="index.html"><button>Micro Manager</button></a>
+    </div>
+
+    <div class="padding">
+      <video width="1000" height="500" controls>
+        <source src="ClonePrototype.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="padding">
+      <p>This is one of the simpler projects that I have been working on. It consists of a player, controllable by a mouse and keyboard or gamepad, being able to move around and jump in a smooth fashion. </p>
+
+      <p>However, the focus of this project was to practice inheritance and how it could affect gameplay.​</p>
+
+      <p>As you can see, when the player holds down a particular button, time slows down and are able to select an entity.​</p>
+
+      <p>Once they release said button, they change into that entity, taking on the abilities and appearance of it.​</p>
+
+      <p>To accomplish this, I wrote one script that controlled how entities moved on the screen, and other behaviours such as health and damage, which you cannot see in this video, as this is an old version.​</p>
+
+      <p>Then I created more scripts for each entity that specifies exactly what they can do but inherits from the larger script to get the correct movement and behaviours.​</p>
+
+      <p>This then allows the player to simply change the class that the player entity is using, hot swapping at runtime without interrupting the flow of gameplay.​</p>
+
+      <p>This project was more of a practice for inheritance as revision for an exam that I had coming up in Computer Science.​</p>
+    </div>
+
   </body>
 </html>
